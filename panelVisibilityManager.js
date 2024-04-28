@@ -300,7 +300,7 @@ export var PanelVisibilityManager = class HideTopBar_PanelVisibilityManager {
             direction = Meta.BarrierDirection.NEGATIVE_Y;
         }
         this._panelBarrier = new Meta.Barrier({
-            display: global.display,
+            backend: global.display,
             x1: PanelBox.x,
             x2: PanelBox.x + PanelBox.width,
             y1: this._base_y - anchor_y,
